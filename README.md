@@ -8,7 +8,7 @@ Bom, escolhi o Java Puro porque gosto de lógica e fazer acontecer, uso o Spring
 
 # Projeto
 
-Desenvolvi classes de veículos e garagens para tipos de veículos específicos; se for colocado, por exemplo, uma moto na garagem para carros ocorrerá uma exception, bom, neste momento não criei uma classe exception para especificar a excessão e fazer o tratamento, pois o objetivo do desafio é apresentar os Padrões de Projetos.
+Neste projeto vamos criar uma aplicação que simula um mundo virtual em que tenha (somente, rsrsrsr) veículos e garagens e, que os veículos tenha somente funções básicas e as garagens aceite somente um tipo de veículo. A princípio, os veículos armazena um veículo apenas, kkkk, bom, o objetivo do projeto é apresentar os Padrões de Projetos.
 
 ## Padrões de Design do GoF[^1]
 
