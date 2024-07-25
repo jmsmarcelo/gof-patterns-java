@@ -1,6 +1,7 @@
 # Desafio DIO Bootcamp, Criando projetos com padrões GoF
-Desafio, criar uma solução que explore o cenceito de Padrões de Projeto:
+Bootcamp: Desenvolvimento Java com IA
 
+Desafio: Criar uma solução que explore o cenceito de Padrões de Projeto:
 - [X] Java Puro (GoF)
 - [ ] Spring Framework
 
