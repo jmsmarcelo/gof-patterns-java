@@ -8,7 +8,7 @@ Bom, escolhi o Java Puro porque gosto de lógica e fazer acontecer, uso o Spring
 
 # Projeto
 
-Neste projeto foii criado uma aplicação que simula um mundo virtual em que tenha (somente, rsrsrsr) veículos e garagens e, que os veículos tenha somente funções básicas e as garagens aceite somente um tipo de veículo. A princípio, os veículos armazena um veículo apenas, kkkk, bom, o objetivo do projeto é apresentar os Padrões de Projetos.
+Neste projeto foi criado uma aplicação que simula um mundo virtual em que tenha (somente, rsrsrsr) veículos e garagens e, que os veículos tenha somente funções básicas e as garagens aceite somente um tipo de veículo. A princípio, os veículos armazena um veículo apenas, kkkk, bom, o objetivo do projeto é apresentar os Padrões de Projetos.
 
 ## Padrões de Design do GoF[^1]
 
