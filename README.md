@@ -21,18 +21,18 @@ Desenvolvi classes de veículos e garagens para tipos de veículos específicos;
 3. ### Template Method[^4]:
    + A classe `Garage` define um esqueleto de métodos para armazenar e retirar veículos (`storingVehicle` e `takingVehicle`), com as subclasses podendo definir detalhes específicos. Isso permite que o comportamento geral seja definido na classe base, enquanto os detalhes são especificados nas subclasses.
 
-##  Princípios de Programação Orientada a Objetos (POO)
+##  Princípios de Programação Orientada a Objetos (POO)[^5]
 
-1. ### Encapsulamento:
+1. ### Encapsulamento[^6]:
    + As classes encapsulam dados e métodos relacionados. Por exemplo, `Car` e `Motorcycle` encapsulam os métodos específicos para ligar, desligar e dirigir o veículo, enquanto a classe `Garage` gerencia a lógica de armazenamento de veículos.
 
-2. ### Polimorfismo:
+2. ### Polimorfismo[^7]:
    + O uso da interface `Vehicle` permite que diferentes tipos de veículos (`Car`, `Motorcycle`) sejam tratados de forma polimórfica, o que é um exemplo claro de polimorfismo em ação.
 
-3. ### Herança:
+3. ### Herança[^8]:
    + A herança é usada entre `Garage` e suas subclasses (`CarGarage` e `MotorcycleGarage`). Isso permite que as subclasses herdem comportamentos comuns, como armazenamento e retirada de veículos, enquanto adicionam ou modificam funcionalidades específicas para o tipo de veículo que gerenciam.
 
-4. ### Abstração:
+4. ### Abstração[^9]:
    + A interface `Vehicle` define um contrato abstrato para todos os tipos de veículos, enquanto as classes concretas (`Car`, `Motorcycle`) implementam esses métodos, escondendo os detalhes de implementação.
 
 ## Diagrama UML
@@ -87,3 +87,8 @@ classDiagram
 [^2]: O padrão Strategy é utilizado para definir uma família de algoritmos, encapsulá-los e torná-los intercambiáveis.
 [^3]: Factory Method Implícito refere-se a situações em que a criação de objetos é controlada por métodos que não são explicitamente chamados de "factory" ou que não seguem rigorosamente a forma tradicional do padrão.
 [^4]: Template Method é um padrão de design comportamental que define o esqueleto de um algoritmo em um método, permitindo que subclasses alterem etapas específicas do algoritmo sem mudar sua estrutura.
+[^5]: POO é um paradigma de programação que organiza o software em objetos, que são instâncias de classes. Uma classe define uma estrutura de dados (atributos) e comportamentos (métodos) que os objetos daquela classe podem ter. POO facilita a modelagem de sistemas complexos usando conceitos do mundo real e promove uma abordagem modular e reutilizável para o desenvolvimento de software.
+[^6]: O Encapsulamento restringe o acesso direto aos atributos de um objeto e controla como esses atributos são manipulados. Isso protege o estado interno do objeto e melhora a segurança e a integridade dos dados.
+[^7]: A Herança permite criar novas classes a partir de classes existentes, herdando seus atributos e métodos, o que promove a reutilização de código e a criação de hierarquias de classes.
+[^8]: O Polimorfismo permite que objetos de diferentes classes sejam tratados como objetos de uma classe comum. Isso facilita a utilização de diferentes tipos de objetos de maneira uniforme e intercambiável.
+[^9]: A Abstração foca em expor apenas os aspectos essenciais de um objeto ou classe, escondendo detalhes complexos e promovendo interfaces claras e concisas.
