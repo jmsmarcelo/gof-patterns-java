@@ -10,16 +10,16 @@ Bom, escolhi o Java Puro porque gosto de lógica e fazer acontecer, uso o Spring
 
 Desenvolvi classes de veículos e garagens para tipos de veículos específicos; se for colocado, por exemplo, uma moto na garagem para carros ocorrerá uma exception, bom, neste momento não criei uma classe exception para especificar a excessão e fazer o tratamento, pois o objetivo do desafio é apresentar os Padrões de Projetos.
 
-## Padrões de Design do GoF
+## Padrões de Design do GoF[^1]
 
-1. ### Strategy Pattern:
-   + O padrão Strategy é utilizado para definir uma família de algoritmos, encapsulá-los e torná-los intercambiáveis. Neste projeto, as classes `Car` e `Motorcycle` implementam a interface `Vehicle`, definindo comportamentos específicos para cada tipo de veículo. Embora o comportamento de direção seja similar, o padrão é sugerido aqui pela forma como diferentes tipos de veículos são tratados, permitindo que novos tipos de veículos possam ser adicionados facilmente sem modificar as classes existentes.
+1. ### Strategy Pattern[^2]:
+   + Neste projeto, as classes `Car` e `Motorcycle` implementam a interface `Vehicle`, definindo comportamentos específicos para cada tipo de veículo. Embora o comportamento de direção seja similar, o padrão é sugerido aqui pela forma como diferentes tipos de veículos são tratados, permitindo que novos tipos de veículos possam ser adicionados facilmente sem modificar as classes existentes.
 
-2. ### Factory Method (implícito):
-   + Factory Method Implícito refere-se a situações em que a criação de objetos é controlada por métodos que não são explicitamente chamados de "factory" ou que não seguem rigorosamente a forma tradicional do padrão. Embora não esteja explicitamente implementado, o uso da classe abstrata `Garage` sugere um padrão de fábrica, onde subclasses específicas (`CarGarage`, `MotorcycleGarage`) podem ser criadas para instanciar e gerenciar tipos específicos de veículos.
+2. ### Factory Method (implícito)[^3]:
+   + Embora não esteja explicitamente implementado, o uso da classe abstrata `Garage` sugere um padrão de fábrica, onde subclasses específicas (`CarGarage`, `MotorcycleGarage`) podem ser criadas para instanciar e gerenciar tipos específicos de veículos.
 
-3. ### Template Method:
-   + Template Method é um padrão de design comportamental que define o esqueleto de um algoritmo em um método, permitindo que subclasses alterem etapas específicas do algoritmo sem mudar sua estrutura. A classe `Garage` define um esqueleto de métodos para armazenar e retirar veículos (`storingVehicle` e `takingVehicle`), com as subclasses podendo definir detalhes específicos. Isso permite que o comportamento geral seja definido na classe base, enquanto os detalhes são especificados nas subclasses.
+3. ### Template Method[^4]:
+   + A classe `Garage` define um esqueleto de métodos para armazenar e retirar veículos (`storingVehicle` e `takingVehicle`), com as subclasses podendo definir detalhes específicos. Isso permite que o comportamento geral seja definido na classe base, enquanto os detalhes são especificados nas subclasses.
 
 ##  Princípios de Programação Orientada a Objetos (POO)
 
@@ -74,3 +74,7 @@ classDiagram
    Garage -- Car
    Garage -- Motorcycle
 ```
+[^1]: Padrões de Design do GoF (Gang of Four) são uma coleção de soluções típicas para problemas comuns de design de software. Esses padrões foram documentados e popularizados por quatro autores—Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides—no livro "Design Patterns: Elements of Reusable Object-Oriented Software", publicado em 1994. O grupo é conhecido como "Gang of Four" ou "GoF".
+[^2]: O padrão Strategy é utilizado para definir uma família de algoritmos, encapsulá-los e torná-los intercambiáveis.
+[^3]: Factory Method Implícito refere-se a situações em que a criação de objetos é controlada por métodos que não são explicitamente chamados de "factory" ou que não seguem rigorosamente a forma tradicional do padrão.
+[^4]: Template Method é um padrão de design comportamental que define o esqueleto de um algoritmo em um método, permitindo que subclasses alterem etapas específicas do algoritmo sem mudar sua estrutura.
