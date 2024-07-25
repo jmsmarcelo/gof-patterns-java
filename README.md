@@ -45,6 +45,7 @@ classDiagram
       <<Interface>>
       +turnedOn()
       +turnedOff()
+      +drive()
       +String getType()
    }
    class Car
