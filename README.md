@@ -24,7 +24,7 @@ Desenvolvi classes de veículos e garagens para tipos de veículos específicos;
 ##  Princípios de Programação Orientada a Objetos (POO)[^5]
 
 1. ### Encapsulamento[^6]:
-   + As classes encapsulam dados e métodos relacionados. Por exemplo, `Car` e `Motorcycle` encapsulam os métodos específicos para ligar, desligar e dirigir o veículo, enquanto a classe `Garage` gerencia a lógica de armazenamento de veículos.
+   + As classes `Car` e `Motorcycle` encapsulam os métodos específicos para ligar, desligar e dirigir o veículo, enquanto a classe `Garage` gerencia a lógica de armazenamento de veículos.
 
 2. ### Polimorfismo[^7]:
    + O uso da interface `Vehicle` permite que diferentes tipos de veículos (`Car`, `Motorcycle`) sejam tratados de forma polimórfica, o que é um exemplo claro de polimorfismo em ação.
