@@ -89,6 +89,6 @@ classDiagram
 [^4]: Template Method é um padrão de design comportamental que define o esqueleto de um algoritmo em um método, permitindo que subclasses alterem etapas específicas do algoritmo sem mudar sua estrutura.
 [^5]: POO é um paradigma de programação que organiza o software em objetos, que são instâncias de classes. Uma classe define uma estrutura de dados (atributos) e comportamentos (métodos) que os objetos daquela classe podem ter. POO facilita a modelagem de sistemas complexos usando conceitos do mundo real e promove uma abordagem modular e reutilizável para o desenvolvimento de software.
 [^6]: O Encapsulamento restringe o acesso direto aos atributos de um objeto e controla como esses atributos são manipulados. Isso protege o estado interno do objeto e melhora a segurança e a integridade dos dados.
-[^7]: A Herança permite criar novas classes a partir de classes existentes, herdando seus atributos e métodos, o que promove a reutilização de código e a criação de hierarquias de classes.
-[^8]: O Polimorfismo permite que objetos de diferentes classes sejam tratados como objetos de uma classe comum. Isso facilita a utilização de diferentes tipos de objetos de maneira uniforme e intercambiável.
+[^7]: O Polimorfismo permite que objetos de diferentes classes sejam tratados como objetos de uma classe comum. Isso facilita a utilização de diferentes tipos de objetos de maneira uniforme e intercambiável.
+[^8]: A Herança permite criar novas classes a partir de classes existentes, herdando seus atributos e métodos, o que promove a reutilização de código e a criação de hierarquias de classes.
 [^9]: A Abstração foca em expor apenas os aspectos essenciais de um objeto ou classe, escondendo detalhes complexos e promovendo interfaces claras e concisas.
