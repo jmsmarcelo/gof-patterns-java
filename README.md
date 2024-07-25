@@ -36,5 +36,39 @@ Desenvolvi classes de veículos e garagens para tipos de veículos específicos;
    + A interface `Vehicle` define um contrato abstrato para todos os tipos de veículos, enquanto as classes concretas (`Car`, `Motorcycle`) implementam esses métodos, escondendo os detalhes de implementação.
 
 ```mermaid
+classDiagram
+   class Main
 
+   class Vehicle {
+      <<Interface>>
+      +turnedOn()
+      +turnedOff()
+      +String getType()
+   }
+   class Car
+
+   class Motorcycle
+
+   class Garage {
+      <<Abstract>>
+      -T vehicle
+      -String vehicleType
+      +storingVehicle()
+      +takingVehicle()
+      +String getVehicleType()
+   }
+   class CarGarage
+
+   class MotorcycleGarage
+
+   Main --> Car
+   Main --> Motorcycle
+   Main --> CarGarage
+   Main --> MotorcycleGarage
+   Car <|-- Vehicle
+   Motorcycle <|-- Vehicle
+   CarGarage <|-- Garage
+   MotorcycleGarage <|-- Garage
+   Garage -- Car
+   Garage -- Motorcycle
 ```
