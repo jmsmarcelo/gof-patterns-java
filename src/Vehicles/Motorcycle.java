@@ -1,4 +1,4 @@
-package strategy.Vehicles;
+package Vehicles;
 
 public class Motorcycle implements Vehicle {
     @Override

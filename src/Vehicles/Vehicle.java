@@ -1,4 +1,4 @@
-package strategy.Vehicles;
+package Vehicles;
 
 public interface Vehicle {
     public void turnedOn();

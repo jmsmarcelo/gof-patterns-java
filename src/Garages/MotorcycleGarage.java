@@ -1,6 +1,6 @@
-package strategy.Garages;
+package Garages;
 
-import strategy.Vehicles.Motorcycle;
+import Vehicles.Motorcycle;
 
 public class MotorcycleGarage extends Garage<Motorcycle> {
     public MotorcycleGarage() {

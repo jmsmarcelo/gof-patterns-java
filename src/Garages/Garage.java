@@ -1,4 +1,4 @@
-package strategy.Garages;
+package Garages;
 
 abstract class Garage<T> {
     private T vehicle;

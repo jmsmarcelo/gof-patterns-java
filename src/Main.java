@@ -1,7 +1,7 @@
-import strategy.Garages.CarGarage;
-import strategy.Vehicles.Car;
-import strategy.Vehicles.Motorcycle;
-import strategy.Vehicles.Vehicle;
+import Garages.CarGarage;
+import Vehicles.Car;
+import Vehicles.Motorcycle;
+import Vehicles.Vehicle;
 
 public class Main {
     public static void main(String[] args) {
