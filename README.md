@@ -35,6 +35,8 @@ Desenvolvi classes de veículos e garagens para tipos de veículos específicos;
 4. ### Abstração:
    + A interface `Vehicle` define um contrato abstrato para todos os tipos de veículos, enquanto as classes concretas (`Car`, `Motorcycle`) implementam esses métodos, escondendo os detalhes de implementação.
 
+## Diagrama UML
+
 ```mermaid
 classDiagram
    class Main
