@@ -39,41 +39,49 @@ Desenvolvi classes de veículos e garagens para tipos de veículos específicos;
 
 ```mermaid
 classDiagram
-   class Main
+    class Vehicle {
+        <<interface>>
+        +turnedOn()
+        +turnedOff()
+        +drive()
+        +getType() : String
+    }
 
-   class Vehicle {
-      <<Interface>>
-      +turnedOn()
-      +turnedOff()
-      +drive()
-      +String getType()
-   }
-   class Car
+    class Car {
+        +turnedOn()
+        +turnedOff()
+        +drive()
+        +getType() : String
+    }
 
-   class Motorcycle
+    class Motorcycle {
+        +turnedOn()
+        +turnedOff()
+        +drive()
+        +getType() : String
+    }
 
-   class Garage {
-      <<Abstract>>
-      -T vehicle
-      -String vehicleType
-      +storingVehicle()
-      +takingVehicle()
-      +String getVehicleType()
-   }
-   class CarGarage
+    class Garage~T~ {
+        -vehicle : T
+        -vehicleType : String
+        +storeVehicle(vehicle : T)
+        +removeVehicle(vehicle : T)
+        +getVehicleType() : String
+    }
 
-   class MotorcycleGarage
+    class CarGarage {
+        +CarGarage()
+    }
 
-   Main --> Car
-   Main --> Motorcycle
-   Main --> CarGarage
-   Main --> MotorcycleGarage
-   Car <|-- Vehicle
-   Motorcycle <|-- Vehicle
-   CarGarage <|-- Garage
-   MotorcycleGarage <|-- Garage
-   Garage -- Car
-   Garage -- Motorcycle
+    class MotorcycleGarage {
+        +MotorcycleGarage()
+    }
+
+    Vehicle <|-- Car
+    Vehicle <|-- Motorcycle
+    Garage o-- Vehicle : uses
+    Garage <|-- CarGarage
+    Garage <|-- MotorcycleGarage
 ```
 [^1]: Padrões de Design do GoF (Gang of Four) são uma coleção de soluções típicas para problemas comuns de design de software. Esses padrões foram documentados e popularizados por quatro autores—Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides—no livro "Design Patterns: Elements of Reusable Object-Oriented Software", publicado em 1994. O grupo é conhecido como "Gang of Four" ou "GoF".
 [^2]: O padrão Strategy é utilizado para definir uma família de algoritmos, encapsulá-los e torná-los intercambiáveis.
